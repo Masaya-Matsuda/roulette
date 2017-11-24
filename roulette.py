@@ -1,4 +1,4 @@
-# coding:utf-8
+#  coding:utf-8
 
 from bottle import route, run, template, request, response, redirect, post
 import random
@@ -8,7 +8,7 @@ def index():
     return template("index")
 
 
-@route('/enter',method = ["POST"])
+@route('/enter', method = ["POST"])
 def enter():
     member = request.POST.getunicode("member_information")
     response.set_cookie("member", member)
@@ -24,7 +24,7 @@ def information():
     return template("information", member = member, alcohol = alcohol)
 
 
-@route('/information_decision',method = ["POST"])
+@route('/information_decision', method = ["POST"])
 def information_decision():
     return redirect('/roulette')
 
