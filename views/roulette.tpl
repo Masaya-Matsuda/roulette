@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 
-<html lang="jp">
+<html lang = "jp">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset = "UTF-8">
 	<title>ルーレット</title>
 </head>
 
