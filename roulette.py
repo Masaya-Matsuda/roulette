@@ -8,7 +8,7 @@ def index():
     return template("index")
 
 
-@route('/enter',method=["POST"])
+@route('/enter',method = ["POST"])
 def enter():
     member = request.POST.getunicode("member_information")
     response.set_cookie("member", member)
@@ -24,7 +24,7 @@ def information():
     return template("information", member = member, alcohol = alcohol)
 
 
-@route('/information_decision',method=["POST"])
+@route('/information_decision',method = ["POST"])
 def information_decision():
     return redirect('/roulette')
 
@@ -40,4 +40,4 @@ def roulette():
     alcohol_volume = random.randint(1,10)
     return template("roulette", chosen_member = chosen_member, chosen_alcohol = chosen_alcohol, alcohol_volume = alcohol_volume)
 
-run(host='localhost', port=8080, reloader=True, debug=True)
+run(host = 'localhost', port = 8080, reloader = True, debug = True)
