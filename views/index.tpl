@@ -1,9 +1,9 @@
-<!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 
-<html lang="jp">
+<html lang = "jp">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset = "UTF-8">
 	<title>ルーレット</title>
 </head>
 
@@ -21,15 +21,15 @@
 
 <br><br>
 
-<form name="information" method="POST" action="/enter">
+<form name = "information" method = "POST" action = "/enter">
     
     <h2>メンバー登録:</h2>
-    <input type="text" name="member_information">
+    <input type = "text" name = "member_information">
 
     <h2>お酒の種類:</h2>
-    <input type="text" name="alcohol_information">
+    <input type = "text" name = "alcohol_information">
 <br><br>
-    <input type="submit" value="送信">
+    <input type = "submit" value = "送信">
 </form>
 
 </body>
