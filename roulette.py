@@ -19,8 +19,8 @@ def enter():
 
 @route('/information')
 def information():
-    member = request.get_cookie("member")
-    alcohol = request.get_cookie("alcohol")
+    member = request.cookies.getunicode("member")
+    alcohol = request.cookies.getunicode("alcohol")
     return template("information", member = member, alcohol = alcohol)
 
 
@@ -31,8 +31,8 @@ def information_decision():
 
 @route('/roulette')
 def roulette():
-    member = request.get_cookie("member")
-    alcohol = request.get_cookie("alcohol")
+    member = request.cookies.getunicode("member")
+    alcohol = request.cookies.getunicode("alcohol")
     member_list = member.split(",")
     alcohol_list = alcohol.split(",")
     chosen_member = random.choice(member_list)
